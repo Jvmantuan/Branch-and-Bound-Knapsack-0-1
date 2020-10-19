@@ -1,7 +1,5 @@
 # **_Branch-and-bound_ para o problema da mochila 0-1**
 
-## **Resumo**
-
 Programa em C/C++ com o algoritmo do _Branch-and-Bound_ para resolver o problema de mochila 0-1.
 
 ## Usando instâncias próprias
