@@ -6,11 +6,11 @@ Programa em C/C++ com o algoritmo do _Branch-and-Bound_ para resolver o problema
 
 Para testar suas próprias instâncias crie um arquivo de texto que siga o seguinte formato:
 
-    - Na primeira linha, deve haver um número que representa o número de variáveis do problema, chamaremos esse número de _n_;     
-    - Na segunda linha, deve haver um número que representa o lado direito da restrição (valor b);
-    - Na terceira linha, deve haver _n_ números, representando os coeficientes da função objetivo;
-    - Na quarta linha, deve haver _n_ números, representando os coeficientes da restrição;
-    - Não pode haver espaços depois do ultimo número de cada linha, nem uma linha em branco no final do arquivo;
+- Na primeira linha, deve haver um número que representa o número de variáveis do problema, chamaremos esse número de _n_;     
+- Na segunda linha, deve haver um número que representa o lado direito da restrição (valor b);
+- Na terceira linha, deve haver _n_ números, representando os coeficientes da função objetivo;
+- Na quarta linha, deve haver _n_ números, representando os coeficientes da restrição;
+- Não pode haver espaços depois do ultimo número de cada linha, nem uma linha em branco no final do arquivo;
 
 Após de terminar o .txt, chame-o de instancia0x.txt, onde x é um número qualquer, por ex: 16, e mova-o para a pasta _instâncias_, dentro da pasta do projeto.
 
