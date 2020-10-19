@@ -12,9 +12,9 @@ Para testar suas próprias instâncias crie um arquivo de texto que siga o segui
 - Na quarta linha, deve haver _n_ números, representando os coeficientes da restrição;
 - Não pode haver espaços depois do ultimo número de cada linha, nem uma linha em branco no final do arquivo;
 
-Após de terminar o .txt, chame-o de instancia0x.txt, onde x é um número qualquer, por ex: 16, e mova-o para a pasta _instancias_, dentro da pasta do projeto.
+Após de terminar o .txt, chame-o de instancia0m.txt, onde _m_ é um número qualquer, por ex: 16, e mova-o para a pasta _instancias_, dentro da pasta do projeto.
 
-No arquivo main.cpp altere a linha: ``entrada.open("instancias/entrada01.txt");`` para ``entrada.open("instancias/entrada0x.txt");`` e compile.
+No arquivo main.cpp altere a linha: ``entrada.open("instancias/entrada01.txt");`` para ``entrada.open("instancias/entrada0m.txt");`` (troque m pelo numero que você escolheu anteriormente) e compile.
 
 ## Conferindo o resultado
 
