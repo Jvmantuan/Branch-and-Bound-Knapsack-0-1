@@ -2,27 +2,24 @@
 
 ## **Resumo**
 
-Criar um programa em C/C++ que resolve o problema de mochila 0-1, e deve funcionar conforme a videoconferência do dia 03/09.
+Programa em C/C++ com o algoritmo do _Branch-and-Bound_ para resolver o problema de mochila 0-1.
 
-A relaxação Linear do problema deve ser resolvida usando o algoritmo guloso mostrado na videoaula.
+## Usando instâncias próprias
 
-Cada variável possui prioridades, determinadas pela razão custo/peso, quanto maior a razão, maior a prioridade.
+Para testar suas próprias instâncias crie um arquivo de texto que siga o seguinte formato:
 
-Ver o PDF do professor para mais detalhes sobre como o programa deve funcionar.
+    - Na primeira linha, deve haver um número que representa o número de variáveis do problema, chamaremos esse número de _n_;     
+    - Na segunda linha, deve haver um número que representa o lado direito da restrição (valor b);
+    - Na terceira linha, deve haver _n_ números, representando os coeficientes da função objetivo;
+    - Na quarta linha, deve haver _n_ números, representando os coeficientes da restrição;
+    - Não pode haver espaços depois do ultimo número de cada linha, nem uma linha em branco no final do arquivo;
 
-## **Ideias**
+Após de terminar o .txt, chame-o de instancia0x.txt, onde x é um número qualquer, por ex: 16, e mova-o para a pasta _instâncias_, dentro da pasta do projeto.
 
-    1. Ler o arquivo de entrada
-    2. Passar para uma matriz (alocada dinamicamente?)
-    3. Criar vetores para 
-       - Função objeitvo
-       - Variáveis de decisão
-       - Variáveis ordenadas de acordo com a prioridade (ordem de ramificação)
-       - Dizer as variáveis que foram avaliadas
-       - Dizer as variáveis que não foram avaliadas
-       - Ou então criar um vetor de valor 0 ou 1 (ou 1 e -1) para dizer se aquela variável foi ou não avaliada (ideia minha)
-    4. Implementar os nós (?)
-    5. Tempo total decorrido (biblioteca)
-    6. Função que printa informações a cada 100 nós
+No arquivo main.cpp altere a linha: `entrada.open("instancias/entrada01.txt");` para `entrada.open("instancias/entrada0x.txt");` e compile.
 
-### **Entregar até dia 16 de outubro de 2020 as 23:59**
+## Conferindo o resultado
+
+Se por algum motivo, você estiver em dúvida sobre o resultado do programa, transforme o arquivo de texto que você criou em um arquivo de formato `.lp`, e o modifique de acordo com as instâncias exemplo. Faça um backup do .txt se quiser utilizá-lo ainda.
+
+Em seguida rode este arquivo `.lp` em um solver CPLEX ou em um servidor de otimização, como o https://neos-server.org/neos/solvers/milp:CPLEX/LP.html. Veja as instruções no site para proceder de forma correta.
