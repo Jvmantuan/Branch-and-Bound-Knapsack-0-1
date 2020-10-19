@@ -12,12 +12,12 @@ Para testar suas próprias instâncias crie um arquivo de texto que siga o segui
 - Na quarta linha, deve haver _n_ números, representando os coeficientes da restrição;
 - Não pode haver espaços depois do ultimo número de cada linha, nem uma linha em branco no final do arquivo;
 
-Após de terminar o .txt, chame-o de instancia0x.txt, onde x é um número qualquer, por ex: 16, e mova-o para a pasta _instâncias_, dentro da pasta do projeto.
+Após de terminar o .txt, chame-o de instancia0x.txt, onde x é um número qualquer, por ex: 16, e mova-o para a pasta _instancias_, dentro da pasta do projeto.
 
-No arquivo main.cpp altere a linha: `entrada.open("instancias/entrada01.txt");` para `entrada.open("instancias/entrada0x.txt");` e compile.
+No arquivo main.cpp altere a linha: ``entrada.open("instancias/entrada01.txt");`` para ``entrada.open("instancias/entrada0x.txt");`` e compile.
 
 ## Conferindo o resultado
 
-Se por algum motivo, você estiver em dúvida sobre o resultado do programa, transforme o arquivo de texto que você criou em um arquivo de formato `.lp`, e o modifique de acordo com as instâncias exemplo. Faça um backup do .txt se quiser utilizá-lo ainda.
+Se por algum motivo, você estiver em dúvida sobre o resultado do programa, transforme o arquivo de texto que você criou em um arquivo de formato `.lp`, e modifique-o de acordo com as instâncias exemplo (observe que temos vários arquivos `.lp` na pasta `instancias`, tente deixar no mesmo formato). Faça um backup do .txt se quiser utilizá-lo ainda.
 
 Em seguida rode este arquivo `.lp` em um solver CPLEX ou em um servidor de otimização, como o https://neos-server.org/neos/solvers/milp:CPLEX/LP.html. Veja as instruções no site para proceder de forma correta.
